@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 
 
 # Gems used only for assets and not required
@@ -63,3 +63,4 @@ gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 
 gem 'paper_trail', '~> 2'
 gem 'twilio-ruby'
+gem 'pg' , group: :production # for Heroku PostgreSQL
